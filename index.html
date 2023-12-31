@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/index.ts"></script>
+    <title>Vite + TS</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        min-width: 600px;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 56px;
+      }
+      div {
+        width: 450px;
+        text-wrap: wrap;
+        margin: auto;
+      }
+      #list {
+        list-style: none; 
+        padding: 0;
+        display:inline-block;
+        text-align: left;
+        justify-content: center;
+      }
+      li {
+        text-align: left;
+        font-size: 30px;
+        margin: 15px 25px;
+      }
+      #new-task-title {
+        border-radius: 5px;
+        background-color: aquamarine;
+        border: 5px solid darkcyan;
+        height: 50px;
+        width: 300px;
+        font-size: 24px;
+        font-weight: bold;
+        outline: none;
+      }
+      button {
+        background-color: darkcyan;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        width: 80px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <form id="new-task-form">
+      <input type="text" name="" id="new-task-title" placeholder="Enter new task...">
+      <button type="submit">Add</button>
+      <div>
+      <ul id="list"></ul>
+    </div>
+    </form>
+  </body>
+</html>
